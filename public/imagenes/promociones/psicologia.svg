@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 650">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#082b49"/><stop offset="1" stop-color="#24c0eb"/></linearGradient><filter id="s"><feGaussianBlur stdDeviation="35"/></filter></defs>
+<rect width="1600" height="650" fill="url(#g)"/><circle cx="1380" cy="90" r="260" fill="#5ed8f5" opacity=".13" filter="url(#s)"/><circle cx="1240" cy="560" r="230" fill="#fff" opacity=".06"/>
+<g transform="translate(1240 315) scale(2.1)"><circle cx="0" cy="-4" r="38" fill="none" stroke="#5ed8f5" stroke-width="8"/><path d="M-22-6c10-12 34-10 42 4M-22 12c10 10 28 8 38-2" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></g>
+<g fill="#fff" font-family="Arial, Helvetica, sans-serif"><text x="110" y="210" font-size="30" font-weight="700" letter-spacing="6" fill="#bcefff">CLÍNICA PIEDRA AZUL</text><text x="110" y="300" font-size="60" font-weight="700">Bienestar emocional</text><text x="110" y="355" font-size="28" opacity=".9">Un espacio profesional para escucharte y acompañarte.</text><rect x="110" y="405" width="250" height="7" rx="4" fill="#5ed8f5"/></g></svg>

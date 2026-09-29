@@ -1,0 +1,6 @@
+.footer-clinica{width:100%;color:#e8f8fd;background:linear-gradient(165deg,#082b49 0%,#0b3558 55%,#0b5275 100%);padding-top:.5rem}
+.footer-marca{font-family:"Fraunces",Georgia,serif;font-size:1.85rem;color:#5ed8f5}
+.redes-footer a{display:inline-flex;width:44px;height:44px;margin-right:.55rem;align-items:center;justify-content:center;color:#fff;border:1px solid rgba(255,255,255,.2);border-radius:12px;text-decoration:none}
+.redes-footer a:hover{background:#24c0eb;color:#082b49;border-color:#24c0eb}
+
+.footer-clinica .h6{color:#8ee7fa;letter-spacing:.08em}.footer-clinica p{color:#cdebf3;line-height:1.6}.footer-clinica{border-top:4px solid #24c0eb}

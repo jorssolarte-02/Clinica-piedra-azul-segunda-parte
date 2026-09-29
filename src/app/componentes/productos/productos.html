@@ -1,0 +1,32 @@
+<section id="productos" class="seccion-productos py-5">
+  <div class="container">
+    <div class="seccion-heading mb-4">
+      <div>
+        <span class="badge-seccion">Tienda Piedra Azul</span>
+        <h2 class="titulo-seccion mb-1">Bienestar para continuar en casa</h2>
+        <p class="lead mb-0 text-muted">Una selección de accesorios y productos pensados para acompañar tus hábitos de cuidado.</p>
+      </div>
+      <div class="tienda-sello"><i class="bi bi-bag-heart-fill"></i><span>Compra responsable</span></div>
+    </div>
+    <div class="row g-4">
+      @for (producto of productos; track producto.titulo) {
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="card h-100 card-producto">
+            <div class="producto-img-wrap">
+              <img [src]="producto.imagen" class="img-fluid card-img-top" [alt]="producto.alt" />
+              <span class="producto-categoria">{{ producto.categoria }}</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h3>{{ producto.titulo }}</h3>
+              <p class="producto-texto flex-grow-1">{{ producto.texto }}</p>
+              <div class="producto-footer">
+                <strong class="producto-precio">{{ producto.precio }}</strong>
+                <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-plus-circle me-1"></i>Ver producto</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      }
+    </div>
+  </div>
+</section>

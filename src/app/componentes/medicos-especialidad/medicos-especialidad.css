@@ -1,0 +1,151 @@
+/* Rubrica item 9: 3 escenarios de médicos por fila
+   - Extra small (<576px): col-12 -> 1 médico por fila
+   - Small (>=576px): col-sm-6 -> 2 médicos por fila
+   - Medium (>=768px): col-md-4 -> 3 médicos por fila
+*/
+
+/* Rubrica item 10: 3 escenarios de sidebar y médicos
+   - Extra small: aside y listado en col-12, apilados
+   - Small: sidebar col-sm-4 / médicos col-sm-8
+   - Medium: sidebar col-md-3 / médicos col-md-9
+*/
+
+.seccion-medicos {
+  background: linear-gradient(180deg, #ffffff 0%, #eef8fc 100%);
+  padding-block: .5rem;
+}
+
+.texto-seccion{display:flex;align-items:flex-end;justify-content:space-between;gap:1.5rem}
+.equipo-resumen{display:flex;align-items:center;gap:.55rem;padding:.7rem 1rem;border:1px solid #c5eaf3;background:#f8fdff;border-radius:14px;color:#0b5275;font-size:.82rem;font-weight:700;white-space:nowrap}
+.equipo-resumen i{font-size:1.1rem;color:#24c0eb}
+
+.badge-seccion {
+  display: inline-block;
+  margin-bottom: 0.55rem;
+  color: #3d5a80;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.titulo-seccion {
+  font-size: clamp(2rem, 3.2vw, 2.8rem);
+  color: #152238;
+}
+
+.panel-especialidades {
+  background: rgba(255,255,255,.92);
+  border: 1px solid rgba(11, 82, 117, 0.13);
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 14px 30px rgba(21, 34, 56, 0.1);
+}
+
+.sidebar-especialidades .list-group-item {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px !important;
+  margin-bottom: 0.5rem;
+  background: transparent;
+  color: #1c2434;
+  padding: 0.75rem 0.9rem;
+}
+
+.sidebar-especialidades .list-group-item.active {
+  background: linear-gradient(90deg, #082b49, #0b82a8);
+  color: #fff;
+  box-shadow: 0 10px 18px rgba(11, 82, 117, 0.24);
+}
+
+.descripcion-especialidad {
+  background: #fff;
+  border-left: 6px solid #24c0eb;
+  border-radius: 12px;
+  padding: 1.15rem 1.35rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 12px 26px rgba(21, 34, 56, 0.1);
+}
+
+.descripcion-especialidad h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.55rem;
+  color: #152238;
+}
+
+.card-medico {
+  overflow: hidden;
+  border: none;
+  border-radius: 14px;
+  background: #f8fafc;
+  box-shadow: 0 16px 32px rgba(21, 34, 56, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-medico:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 42px rgba(21, 34, 56, 0.18);
+}
+
+.card-medico .card-img-wrap {
+  height: 212px;
+  overflow: hidden;
+  position: relative;
+  background: #d7e0ec;
+}
+
+.card-medico img {
+  width: 100%;
+  height: 212px;
+  object-fit: cover;
+}
+
+.chip-experiencia {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  background: rgba(16, 24, 40, 0.9);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.32rem 0.8rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.nombre-medico {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.32rem;
+  color: #152238;
+}
+
+.dato-medico,
+.frase-medico {
+  font-size: 0.92rem;
+  color: #4b5870;
+}
+
+.perfil-medico{font-size:.84rem;line-height:1.5;color:#607482;background:#f4fbfd;border-radius:10px;padding:.65rem .75rem;border-left:3px solid #9ddfee}
+
+@media(max-width:767.98px){.texto-seccion{align-items:flex-start;flex-direction:column}.equipo-resumen{white-space:normal;width:100%}}
+
+.dato-medico i,
+.frase-medico i,
+.nombre-medico i {
+  color: #0b9fc7;
+  margin-right: 0.25rem;
+}
+
+.lista-todos-medicos {
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.especialidad-lista {
+  color: inherit;
+  opacity: 0.8;
+}
+
+.medico-destacado .card-medico {
+  outline: 3px solid #24c0eb;
+  outline-offset: 2px;
+}

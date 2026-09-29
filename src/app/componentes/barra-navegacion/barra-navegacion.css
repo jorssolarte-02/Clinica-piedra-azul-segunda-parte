@@ -1,0 +1,8 @@
+.navbar-clinica{background:rgba(8,43,73,.97);backdrop-filter:blur(14px);box-shadow:0 10px 26px rgba(8,43,73,.28);padding-block:.7rem}
+.navbar-clinica .navbar-brand,.navbar-clinica .nav-link{color:#eefbff}
+.navbar-brand{font-family:"Fraunces",Georgia,serif;font-size:1.45rem;font-weight:700}
+.nav-link{position:relative;margin-left:.55rem;font-weight:700;letter-spacing:.03em;padding:.55rem .85rem!important}
+.nav-link::after{content:"";position:absolute;left:.75rem;right:.75rem;bottom:.18rem;height:3px;background:#24c0eb;transform:scaleX(0);transition:transform .2s ease;border-radius:99px}
+.nav-link:hover,.nav-link:focus{color:#6fddf8}
+.nav-link:hover::after,.nav-link:focus::after{transform:scaleX(1)}
+.navbar-toggler{border-color:rgba(36,192,235,.6);border-radius:10px;padding:.45rem .7rem}.navbar-toggler-icon{filter:invert(1)}
